@@ -9,4 +9,11 @@
     <%= post.content %>
   </p>
 
+  <p>
+    <strong>Comment:</strong>
+    <% post.comments.each do |post| %>
+      <p><%= post.body %></p>
+    <% end %>
+  </p>
+
 </div>
